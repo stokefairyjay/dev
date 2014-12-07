@@ -1,0 +1,31 @@
+<?php abstract class BaseDAO{
+
+	
+	protected $db;
+
+	protected $connection;
+		
+	function __construct(){	
+
+		$this->connection = mysql_connect('mysql01.mdb.eclipse.net.uk','MYSQL1550','#######') or die(mysql_error());
+
+		$this->db = mysql_select_db('MYSQL1550');
+
+		}
+
+	
+	protected function execute($sql){
+
+		$result = mysql_query($sql,$this->connection);
+		
+		return $result;
+
+		}
+
+
+
+}
+
+
+
+?>
