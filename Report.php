@@ -74,13 +74,15 @@ session_start();
 		<th>Date</th>
 
 		<th>Swell</th>
+		
+		<th>Swell Chart</th>
 
 		<th>Period</th>
 
 		<th>Wind</th>
-
-		<th>Swell Chart</th>
-
+		
+		<th>Wind Chart</th>
+		
 	  </tr>");
 
 		for ($i = 0; $i < sizeof($response); $i++)
@@ -103,7 +105,7 @@ session_start();
 
 			$swellChart = $response[$i]['charts']['swell'];
 
-			echo("<tr " . $trclass . ">" . "<td>" . $date . "</td> <td>" . $swell . " foot"."</td> <td>" . $period . " seconds </td> <td>" .$windspeed . " mph<br>" . $windDirection . "</td> <td> <img src='" . $swellChart ."' alt='swell chart'> </td> </tr>");
+			echo("<tr " . $trclass . ">" . "<td>" . $date . "</td> <td>" . $swell . " foot </td> <td> <img src='" . $swellChart ."' alt='swell chart'> </td><td>" . $period . " seconds </td> <td>" .$windspeed . " mph<br>" . $windDirection . "</td> <td> <img src='" . $windChart ."' alt='wind chart'> </td> </tr>");
 
 		}
 
