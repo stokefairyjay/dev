@@ -67,18 +67,6 @@ session_start();
 
 		$response = $MSWFacade->getMSWReportAsAssocArray($spotId);
 
-		
-
-		/*
-
-		include_once('dBug.php');
-
-		new dBug($response);
-
-		*/
-
-			
-
 		echo(" <table class='surfreport'>
 
 	  <tr>
