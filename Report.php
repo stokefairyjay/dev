@@ -10,8 +10,6 @@
 
 <body>
 
-<a href="report.php?id=164">report a</a>
-
             <table align="center"> 
 
                 <tr>
